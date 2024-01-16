@@ -1,0 +1,10 @@
+body{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.custom-mt-32 {
+    margin-top: 8rem;
+}
+.custom-mb-4 {
+    margin-bottom: 1rem;
+}
