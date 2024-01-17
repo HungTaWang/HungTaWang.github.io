@@ -1,10 +1,43 @@
 body{
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.custom-mt-32 {
-    margin-top: 8rem;
+.custom-mt-40 {
+    margin-top: 10rem;
 }
-.custom-mb-4 {
-    margin-bottom: 1rem;
+.custom-mb-8 {
+    margin-bottom: 2rem;
+}
+
+#bar{
+    background-color: #16a7e6;
+}
+
+.nav-link {
+    color: #6c757d; /* 这是 Bootstrap 中的 muted 颜色 */
+}
+
+.nav-link.active {
+    color: #ffffff; /* 这是黑色的示例 */
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 20px; /* 根据需要调整间距 */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.section h3 {
+    margin-bottom: 10px; /* 根据需要调整标题和内容之间的间距 */
+}
+
+.section p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }

@@ -11,29 +11,51 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <title>Hung-Ta, Wang</title>
 </head>
 <body>
-
-    <div class = "container-fluid">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-3 bg-info text-white text-center" >
-                <img src="my_photo.jpg" alt="This is my photo." class="img-responsive img-thumbnail mx-auto d-block custom-mt-32 custom-mb-4" width="150">
-                <h3>Hung-Ta, Wang</h3>
-                <h4>Student in NCKU</h4>
+            <nav id="bar" class="col-12 text-end mt-3">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('PROFILE')">PROFILE</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('EDUCATION')">EDUCATION</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('SKILLS')">SKILLS</button>
+                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('EXPERIENCE')">EXPERIENCE</button>
+                </div>
+            </nav>
+            <div class="col-12">
+                <div id="PROFILE" class="section">
+                    <h3>PROFILE</h3><br>
+                    <img src="my_photo.jpg" alt="This is my photo." class="rounded mx-start custom-mt-40 custom-mb-8" width="150">
+                    <p></p>
+                </div> 
                 
-                <h5>About</h5>
-                <h5>Education</h5>
-                <h5>Skills</h5>
+                <div id="EDUCATION" class="section">
+                    <h3>EDUCATION</h3>
+                    <p></p>
+                </div>
                 
-            </div>
-            <div class="col-9 bg-success text-white">
-
+                <div id="SKILLS" class="section">
+                    <h3>SKILLS</h3>
+                    <p></p>
+                </div>
+                
+                <div id="EXPERIENCE" class="section">
+                    <h3>EXPERIENCE</h3>
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
