@@ -1,25 +1,11 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Azeret Mono', monospace;
 }
 
-.custom-mt-40 {
-    margin-top: 10rem;
-}
-.custom-mb-8 {
-    margin-bottom: 2rem;
+.custom-ms-12 {
+    margin-left: 3rem;
 }
 
-#bar{
-    background-color: #16a7e6;
-}
-
-.nav-link {
-    color: #6c757d; /* 这是 Bootstrap 中的 muted 颜色 */
-}
-
-.nav-link.active {
-    color: #ffffff; /* 这是黑色的示例 */
-}
 
 .section {
     height: 100vh;
@@ -28,16 +14,42 @@ body{
     align-items: flex-start;
     justify-content: center;
     margin: 0;
-    padding: 20px; /* 根据需要调整间距 */
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    padding: 20px;
 }
 
-.section h3 {
-    margin-bottom: 10px; /* 根据需要调整标题和内容之间的间距 */
+.section-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccccccc4;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
-.section p {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+#bar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #7ea7ff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
 }
+
+#section-main{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#CONTACT{
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center; 
+    gap: 50px; 
+}
+

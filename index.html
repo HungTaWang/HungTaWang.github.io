@@ -11,50 +11,143 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style.css">
     <title>Hung-Ta, Wang</title>
 </head>
-<body>
+<body onload="scrollToTop()">
     <div class="container-fluid">
         <div class="row">
-            <nav id="bar" class="col-12 text-end mt-3">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('PROFILE')">PROFILE</button>
-                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('EDUCATION')">EDUCATION</button>
-                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('SKILLS')">SKILLS</button>
-                    <button type="button" class="btn btn-outline-dark" onclick="scrollToSection('EXPERIENCE')">EXPERIENCE</button>
-                </div>
-            </nav>
-            <div class="col-12">
-                <div id="PROFILE" class="section">
-                    <h3>PROFILE</h3><br>
-                    <img src="my_photo.jpg" alt="This is my photo." class="rounded mx-start custom-mt-40 custom-mb-8" width="150">
-                    <p></p>
-                </div> 
+            <div id="section-main" class="col-12 d-flex justify-content-start">
+                <nav id="bar" class="col-12 d-flex justify-content-between">
+                    <div>
+                        <h3 id="HOME" onclick="scrollToSection('section-main')"><b>&nbspMAIN PAGE</b></h3>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-dark rounded-pill ms-4" onclick="scrollToSection('PROFILE')">PROFILE</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill ms-4" onclick="scrollToSection('EDUCATION')">EDUCATION</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill ms-4" onclick="scrollToSection('SKILLS')">SKILLS</button>
+                        <button type="button" class="btn btn-outline-dark rounded-pill ms-4" onclick="scrollToSection('EXPERIENCE')">EXPERIENCE</button>
+                        <button class="btn btn-outline-dark rounded-pill dropdown-toggle ms-4" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            LANGUAGE
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">ENGLISH</a>
+                            <a class="dropdown-item" href="#EXPERIENCE">繁體中文</a>
+                        </div>
+                    </div>
+                </nav>
                 
-                <div id="EDUCATION" class="section">
-                    <h3>EDUCATION</h3>
-                    <p></p>
-                </div>
-                
-                <div id="SKILLS" class="section">
-                    <h3>SKILLS</h3>
-                    <p></p>
-                </div>
-                
-                <div id="EXPERIENCE" class="section">
-                    <h3>EXPERIENCE</h3>
-                    <p></p>
+                <div id="CONTACT" class="col-12 d-flex justify-content-start">
+                    <div class="col-4">
+                        <div class="section">
+                            <img src="my_photo.jpg" alt="This is my photo." class="img-thumbnail mx-start custom-ms-12" width="300">
+                            <p></p>
+                        </div>
+                    </div> 
+                    <div class="col-8">
+                        <div class="section">
+                            <h1><b>Hung-Ta, Wang</b></h1>
+                            <br><br>
+                            <h4>I am a student at National Cheng Kung University.<br>
+                            My dream is to keep improving myself every day.<br><br><br>
+                            
+                            Contact me:</h4><br>
+                            <div class="icons-container">
+                                <a href="mailto:hungta.wang0118@gmail.com"><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                                <a href="tel:+886 939 815 932"><i class="fa fa-phone" style="font-size:36px"></i></a>
+                                <a href="https://www.linkedin.com/in/hung-ta-wang-70a33419a"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                            </div>
+
+                        </div>
+                    </div> 
                 </div>
             </div>
+            
+            
+
+            <div class="section-divider"></div>
+            <div class="col-12">
+                <div id="PROFILE" class="col-12 d-flex justify-content-start">
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>PROFILE</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>PROFILE</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="section-divider"></div>
+
+
+                <div id="EDUCATION" class="col-12 d-flex justify-content-start">
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>EDUCATION</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>EDUCATION</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="section-divider"></div>
+
+                <div id="SKILLS" class="col-12 d-flex justify-content-start">
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>SKILLS</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>SKILLS</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="section-divider"></div>
+
+
+                <div id="EXPERIENCE" class="col-12 d-flex justify-content-start">
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>EXPERIENCE</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                    <div class="col-6">
+                        <div class="section">
+                            <h3>EXPERIENCE</h3><br>
+                            <p></p>
+                        </div>
+                    </div> 
+                </div>
+=            </div>
         </div>
     </div>
 
     <script>
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToTop() {
+            window.scrollTo(0, 0);
         }
     </script>
 </body>
