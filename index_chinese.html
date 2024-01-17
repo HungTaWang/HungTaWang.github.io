@@ -149,6 +149,23 @@
         function scrollToTop() {
             window.scrollTo(0, 0);
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+        var navbar = document.getElementById('navbar');
+
+        document.addEventListener('click', function (event) {
+            // 檢查點擊的目標是否在 Navbar 內
+            var isClickInsideNavbar = navbar.contains(event.target);
+
+            // 如果點擊的不在 Navbar 內，收起選單
+            if (!isClickInsideNavbar) {
+                var navbarToggler = document.querySelector('.navbar-toggler');
+                if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+                    navbarToggler.click();
+                }
+            }
+        });
+    });
     </script>
 </body>
 </html>
