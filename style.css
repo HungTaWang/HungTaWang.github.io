@@ -3,11 +3,6 @@ body{
     background-color: #FFE8D6;
 }
 
-.custom-ms-12 {
-    margin-left: 3rem;
-}
-
-
 .section {
     height: 100vh;
     display: flex;
@@ -28,8 +23,6 @@ body{
 
 #navbarNav {
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 10px;
 }
 
 
@@ -61,7 +54,7 @@ body{
 }
 
 .navbar-brand{
-    margin-right: 32vw;
+    margin-right: 30vw;
     font-size: 28px;
 }
 

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -74,7 +74,7 @@
                 <div id="CONTACT" class="col-12 d-flex justify-content-start">
                     <div class="col-4">
                         <div class="section">
-                            <img src="my_photo.jpg" alt="This is my photo." class="img-thumbnail mx-start custom-ms-12" width="300">
+                            <img src="my_photo.jpg" alt="This is my photo." class="img-thumbnail mx-start" width="300">
                             <p></p>
                         </div>
                     </div> 
@@ -83,7 +83,7 @@
                             <h1><b>Hung-Ta, Wang</b></h1>
                             <br><br>
                             <h4>I am a student at National Cheng Kung University.<br>
-                            My dream is to keep improving myself every day!<br><br><br>
+                            My goal is to keep improving myself every day!<br><br><br>
                             
                             Contact me:</h4><br>
                             <div class="icons-container">
@@ -176,10 +176,27 @@
             window.scrollTo(0, 0);
         }
 
-        var a = document.querySelector(".navbar-toggle");
-        $(".navbar-nav li a").on("click", function(){
-            a.click();
+        document.addEventListener("DOMContentLoaded", function () {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarNav = document.querySelector(".navbar-nav");
+        var bsCollapse = new bootstrap.Collapse(navbarNav, {
+            toggle: false
         });
+
+        navbarToggler.addEventListener("click", function () {
+            bsCollapse.toggle();
+        });
+
+        document.addEventListener("click", function (event) {
+            var isNavbarTogglerClicked = navbarToggler.contains(event.target);
+            var isNavbarNavClicked = navbarNav.contains(event.target);
+
+            if (!isNavbarTogglerClicked && !isNavbarNavClicked) {
+                // 使用 jQuery 的方式來隱藏 Navbar
+                $(navbarNav).collapse('hide');
+            }
+        });
+    });
     </script>
 </body>
 </html>
