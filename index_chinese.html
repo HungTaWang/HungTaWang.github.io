@@ -33,10 +33,10 @@
                         <div class="collapse navbar-collapse fixed-top" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="#section-main"><b>回到主頁</b></a>
+                                    <a class="nav-link" href="#section-main"><h3><b>主頁</b></h3></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#PROFILE"">個人簡歷</a>
+                                    <a class="nav-link" href="#PROFILE"">個人簡介</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#EDUCATION">教育背景</a>
@@ -56,7 +56,7 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        語言能力
+                                        語言
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="index.html">英文</a>
@@ -104,15 +104,15 @@
             <div class="section-divider"></div>
             <div class="col-12">
                 <div id="PROFILE" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-11">
                         <div class="section">
-                            <h3>PROFILE</h3><br>
-                            <p></p>
+                            <h3>個人簡介</h3><br>
+                            <p style="line-height: 40px; font-size: 20px;">雙主修會計和⼯業與資訊管理使我習得跨領域的知識，更使我能快速調整⾃⼰，以適應新的環境、要求與團隊，這同樣使我更加有決策⼒。
+                            </p>
                         </div>
                     </div> 
-                    <div class="col-6">
+                    <div class="col-1">
                         <div class="section">
-                            <h3>PROFILE</h3><br>
                             <p></p>
                         </div>
                     </div> 
@@ -121,16 +121,18 @@
 
 
                 <div id="EDUCATION" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="section">
-                            <h3>EDUCATION</h3><br>
-                            <p></p>
-                        </div>
-                    </div> 
-                    <div class="col-6">
-                        <div class="section">
-                            <h3>EDUCATION</h3><br>
-                            <p></p>
+                            <h3>教育背景</h3><br><br>
+                            <h4>國立成功大學 <em style="font-size: small; margin-left: 100vh;">Sep 2019 - Jun 2024</em></h4>
+                            <h5>會計學系</h5>
+                            <h5>雙主修：工業與資訊管理學系</h5>
+                            <br>
+                            <ul id="edu">
+                                <li>平均GPA: 3.87</li>
+                                <li>排名: 15 / 77</li>
+                                <li>總修習學分: 184</li>    
+                            </ul>
                         </div>
                     </div> 
                 </div>
@@ -139,14 +141,30 @@
                 <div id="SKILLS" class="col-12 d-flex justify-content-start">
                     <div class="col-6">
                         <div class="section">
-                            <h3>SKILLS</h3><br>
-                            <p></p>
-                        </div>
-                    </div> 
-                    <div class="col-6">
-                        <div class="section">
-                            <h3>SKILLS</h3><br>
-                            <p></p>
+                            <h3>專業技能</h3>
+                            <ul style="font-size: 20px;">
+                                <span class="offset-anchor" id="Python"></span>
+                                <li>Python</li>
+                                    <ul>
+                                        <li>專案 1</li>
+                                        <li>專案 2</li>
+                                        <li>專案 3</li>
+                                    </ul>
+                                <span class="offset-anchor" id="C++"></span>
+                                <li>C++</li>
+                                    <ul>
+                                        <li>專案 1</li>
+                                        <li>專案 2</li>
+                                        <li>專案 3</li>
+                                    </ul>
+                                <span class="offset-anchor" id="WebD"></span>
+                                <li>網頁開發</li>
+                                    <ul>
+                                        <li>專案 1</li>
+                                        <li>專案 2</li>
+                                        <li>專案 3</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div> 
                 </div>
@@ -154,20 +172,18 @@
 
 
                 <div id="EXPERIENCE" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="section">
-                            <h3>EXPERIENCE</h3><br>
-                            <p></p>
-                        </div>
-                    </div> 
-                    <div class="col-6">
-                        <div class="section">
-                            <h3>EXPERIENCE</h3><br>
-                            <p></p>
+                                <h3>特殊經歷</h3><br><br>
+                                <ul>
+                                <li><h4><a href="NCKU_business_competition_chinese.html">第一名 - 成功盃個案分析競賽</a></h4></li><br>
+                                <li><h4>財務長 - 成大國際英語演說社</h4></li><br>
+                                <li><h4>實習 - 資誠聯合會計師事務所</h4></li>
+                            </ul>
                         </div>
                     </div> 
                 </div>
-=            </div>
+             </div>
         </div>
     </div>
 
@@ -188,15 +204,22 @@
         });
 
         document.addEventListener("click", function (event) {
-            var isNavbarTogglerClicked = navbarToggler.contains(event.target);
-            var isNavbarNavClicked = navbarNav.contains(event.target);
+        var isBodyClicked = event.target.closest('body');
+        var isDropdownItemClicked = event.target.closest('.dropdown-item');
+        var isNavLinkClicked = event.target.closest('.nav-link');
+        var isDropdownClicked = event.target.closest('.dropdown');
 
-            if (!isNavbarTogglerClicked && !isNavbarNavClicked) {
-                // 使用 jQuery 的方式來隱藏 Navbar
+        if (isNavLinkClicked || isBodyClicked) {
+            if(!isDropdownClicked){
                 $(navbarNav).collapse('hide');
             }
-        });
+        }
+        if (isDropdownItemClicked) {
+            $(navbarNav).collapse('hide');
+        }
     });
+});
+
     </script>
 </body>
 </html>

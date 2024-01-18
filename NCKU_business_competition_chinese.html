@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Hung-Ta, Wang</title>
+</head>
+<body onload="scrollToTop()">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="section-main" class="col-12 d-flex justify-content-start">
+                <nav id="bar" class="navbar navbar-expand-lg fixed-top ms-0">
+                    <div class="container-fluid">
+                        <p class="navbar-brand""></p>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse fixed-top" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index_chinese.html"><h3><b>主頁</b></h3></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        LANGUAGE
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="NCKU_business_competition.html">英文</a>
+                                        <a class="dropdown-item" href="NCKU_business_competition_chinese.html">繁體中文</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="section">
+                    <h3><b>成功盃個案分析競賽</b></h3><br>
+                    <img src="NCKU_competition.png" alt="This is my photo." class="img-thumbnail mx-start" width="600" height="400">
+                </div>
+                <div class="section-divider"></div>
+                <div class="section">
+                    <p>　　參加成功盃個案分析比賽時，我在練習期間被評價為反應快、善於隨機應變，因而被指派為最後總結以及主要負責回答評審問題的部分，
+                        這兩個部分都需要根據剩餘時間作應變，非常看重臨場反應以及事先練習。其中，令我印象最深刻的是評審問答，
+                        當時我們的主題是AKB48要如何進攻海外市場，在國外設立據點，我們透過研究調查多國的社會經濟狀況，最後選擇印尼，
+                        評審的問題是印尼的電視普及率那麼低，我們該如何確保我們的節目能被民眾看到，這一題是我們完全沒有料想到的，
+                        或許是因為我總是喜歡做和常人不一樣的決定，所以更能適應不確定性，在驚慌之餘，我也只能戰戰兢兢的接過麥克風，
+                        嘗試組織自己的所有生活經驗及知識，我最後的回答是在電視不普及的情況下，若我們的節目能吸引觀眾，
+                        觀眾也會主動想辦法接觸我們的節目，即便無法準時在電視機前收看也仍會透過與朋友討論的方式讓我們的節目繼續傳播下去，
+                        我們的新團體反而更能激起討論度。這樣的回答得到了評審的肯定，而我們最後也獲得冠軍的成績！</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+        var navbarToggler = document.querySelector(".navbar-toggler");
+        var navbarNav = document.querySelector(".navbar-nav");
+        var bsCollapse = new bootstrap.Collapse(navbarNav, {
+            toggle: false
+        });
+
+        navbarToggler.addEventListener("click", function () {
+            bsCollapse.toggle();
+        });
+
+        document.addEventListener("click", function (event) {
+        var isBodyClicked = event.target.closest('body');
+        var isDropdownItemClicked = event.target.closest('.dropdown-item');
+        var isNavLinkClicked = event.target.closest('.nav-link');
+        var isDropdownClicked = event.target.closest('.dropdown');
+
+        if (isNavLinkClicked || isBodyClicked) {
+            if(!isDropdownClicked){
+                $(navbarNav).collapse('hide');
+            }
+        }
+        if (isDropdownItemClicked) {
+            $(navbarNav).collapse('hide');
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
