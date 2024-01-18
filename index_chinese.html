@@ -74,9 +74,9 @@
                 <b style="font-size: 24px;">歡迎來到我的網頁！</b><br>
                 <p>我是成功大學的學生。<br>很高興認識你。</p><br>
                 <br><br>
-                    <a style="margin-right: 30px;" class="link-dark" href="mailto:hungta.wang0118@gmail.com"><i class="fa fa-envelope" style="font-size:30px"></i></a>
-                    <a style="margin-right: 30px;"class="link-dark" href="tel:+886 939 815 932"><i class="fa fa-phone" style="font-size:36px"></i></a>
-                    <a class="link-dark" href="https://www.linkedin.com/in/hung-ta-wang-70a33419a"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                <a id="emailLink" style="margin-right: 30px;" class="link-dark" href="mailto:hungta.wang0118@gmail.com"><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                <a id="phoneLink" style="margin-right: 30px;"class="link-dark" href="tel:+886 939 815 932"><i class="fa fa-phone" style="font-size:36px"></i></a>
+                <a id="linkedInLink" class="link-dark" href="https://www.linkedin.com/in/hung-ta-wang-70a33419a"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
             </div>
         </div>      
  
@@ -201,25 +201,38 @@
             var body = document.body;
             var button = document.getElementById('modeButton');
             var links = document.getElementsByTagName('a');
+            var emailLink = document.getElementById('emailLink');
+            var phoneLink = document.getElementById('phoneLink');
+            var linkedInLink = document.getElementById('linkedInLink');
 
-            // 切換模式
             darkMode = !darkMode;
 
-            // 根據模式設置背景顏色和按鈕文本
             if (darkMode) {
                 body.style.backgroundColor = '#222831';
                 body.style.color = '#F6F6F2';
                 for (var i = 0; i < links.length; i++) {
                     links[i].style.color = '#F6F6F2';
                 }
-                button.innerText = '淺色模式';
+                var emailIcon = document.querySelector('#emailLink i');
+                emailIcon.style.color = '#F6F6F2';
+                var phoneIcon = document.querySelector('#phoneLink i');
+                phoneIcon.style.color = '#F6F6F2';
+                var linkedInIcon = document.querySelector('#linkedInLink i');
+                linkedInIcon.style.color = '#F6F6F2';
+                button.innerText = 'LIGHT MODE';
             } else {
                 body.style.backgroundColor = '#F6F6F2';
                 body.style.color = '#222831';
                 for (var i = 0; i < links.length; i++) {
                     links[i].style.color = '#222831';
                 }
-                button.innerText = '深色模式';
+                var emailIcon = document.querySelector('#emailLink i');
+                emailIcon.style.color = '#222831';
+                var phoneIcon = document.querySelector('#phoneLink i');
+                phoneIcon.style.color = '#222831';
+                var linkedInIcon = document.querySelector('#linkedInLink i');
+                linkedInIcon.style.color = '#222831';
+                button.innerText = 'DARK MODE';
             }
         }
     </script>
