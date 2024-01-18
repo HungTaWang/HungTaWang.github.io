@@ -2,39 +2,33 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=1, minimum-scale=1.0, maximum-scale=3.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="style.css">
+
     <title>Hung-Ta, Wang</title>
 </head>
 <body onload="scrollToTop()">
     <div class="container-fluid">
         <div class="row">
             <div id="section-main" class="col-12 d-flex justify-content-start">
-                <nav id="bar" class="navbar navbar-expand-lg fixed-top ms-0">
-                    <div class="container-fluid">
-                        <p class="navbar-brand""></p>
+                <nav class="navbar navbar-expand-lg fixed-top ms-0">
+                        <a class="navbar-brand" href="index.html"><b style="font-size: 24px;">Hung-Ta, Wang</b></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse fixed-top" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html"><h3><b>MAIN PAGE</b></h3></a>
-                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         LANGUAGE
@@ -44,13 +38,15 @@
                                         <a class="dropdown-item" href="NCKU_business_competition_chinese.html">Chinese</a>
                                     </div>
                                 </li>
+                                <li class="nav-item">
+                                    <a id="modeButton" class="nav-link" onclick="toggleMode()">DARK MODE</a>
+                                </li>
                             </ul>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="section">
@@ -72,41 +68,67 @@
             </div>
         </div>
 
-
-
     <script>
         function scrollToTop() {
             window.scrollTo(0, 0);
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-        var navbarToggler = document.querySelector(".navbar-toggler");
-        var navbarNav = document.querySelector(".navbar-nav");
-        var bsCollapse = new bootstrap.Collapse(navbarNav, {
-            toggle: false
+                var navbarToggler = document.querySelector(".navbar-toggler");
+                var navbarNav = document.querySelector(".navbar-nav");
+                var bsCollapse = new bootstrap.Collapse(navbarNav, {
+                    toggle: false
+                });
+
+                navbarToggler.addEventListener("click", function () {
+                    bsCollapse.toggle();
+                });
+
+                document.addEventListener("click", function (event) {
+                var isBodyClicked = event.target.closest('body');
+                var isDropdownItemClicked = event.target.closest('.dropdown-item');
+                var isNavLinkClicked = event.target.closest('.nav-link');
+                var isDropdownClicked = event.target.closest('.dropdown');
+
+                if (isNavLinkClicked || isBodyClicked) {
+                    if(!isDropdownClicked){
+                        $(navbarNav).collapse('hide');
+                    }
+                }
+                if (isDropdownItemClicked) {
+                    $(navbarNav).collapse('hide');
+                }
+            });
         });
 
-        navbarToggler.addEventListener("click", function () {
-            bsCollapse.toggle();
-        });
+        var darkMode = false;
 
-        document.addEventListener("click", function (event) {
-        var isBodyClicked = event.target.closest('body');
-        var isDropdownItemClicked = event.target.closest('.dropdown-item');
-        var isNavLinkClicked = event.target.closest('.nav-link');
-        var isDropdownClicked = event.target.closest('.dropdown');
+        function toggleMode() {
+            var body = document.body;
+            var button = document.getElementById('modeButton');
+            var links = document.getElementsByTagName('a');
 
-        if (isNavLinkClicked || isBodyClicked) {
-            if(!isDropdownClicked){
-                $(navbarNav).collapse('hide');
+            // 切換模式
+            darkMode = !darkMode;
+
+            // 根據模式設置背景顏色和按鈕文本
+            if (darkMode) {
+                body.style.backgroundColor = '#222831';
+                body.style.color = '#F6F6F2';
+                for (var i = 0; i < links.length; i++) {
+                    links[i].style.color = '#F6F6F2';
+                }
+                button.innerText = 'LIGHT MODE';
+            } else {
+                body.style.backgroundColor = '#F6F6F2';
+                body.style.color = '#222831';
+                for (var i = 0; i < links.length; i++) {
+                    links[i].style.color = '#222831';
+                }
+                button.innerText = 'DARK MODE';
+                
             }
         }
-        if (isDropdownItemClicked) {
-            $(navbarNav).collapse('hide');
-        }
-    });
-});
-
     </script>
 </body>
 </html>

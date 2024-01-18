@@ -57,23 +57,26 @@
                                         <a class="dropdown-item" href="index_chinese.html">Chinese</a>
                                     </div>
                                 </li>
+                                <li class="nav-item">
+                                    <a id="modeButton" class="nav-link" onclick="toggleMode()">DARK MODE</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
-        <div id="CONTACT" class="col-12 d-flex justify-content-center align-items-center">
-            <div class="section text-center">
+        <div id="CONTACT" class="col-12 d-flex justify-content-center">
+            <div class="text-center">
+                <br><br>
                 <img src="my_photo.jpg" alt="This is my photo." class="img-thumbnail" width="200">
-                <br>
-                <b style="font-size: 24px;">Welcome!</b><br>
-                Contact me:<br>
-                <div class="icons-container">
-                    <a class="link-dark" href="mailto:hungta.wang0118@gmail.com"><i class="fa fa-envelope" style="font-size:30px"></i></a>
-                    <a class="link-dark" href="tel:+886 939 815 932"><i class="fa fa-phone" style="font-size:36px"></i></a>
+                <br><br>
+                <b style="font-size: 24px;">Welcome to my webpage!</b><br>
+                <p>I am student at NCKU.<br>Nice to meet you here.</p><br>
+                Contact me<br>
+                    <a style="margin-right: 30px;" class="link-dark" href="mailto:hungta.wang0118@gmail.com"><i class="fa fa-envelope" style="font-size:30px"></i></a>
+                    <a style="margin-right: 30px;"class="link-dark" href="tel:+886 939 815 932"><i class="fa fa-phone" style="font-size:36px"></i></a>
                     <a class="link-dark" href="https://www.linkedin.com/in/hung-ta-wang-70a33419a"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
-                </div>
             </div>
         </div>      
  
@@ -95,11 +98,10 @@
                 <div id="EDUCATION" class="col-12 d-flex justify-content-start">
                     <div class="col-12">
                         <div class="section">
-                            <h3>EDUCATION</h3><br><br>
+                            <h3>EDUCATION</h3><br>
                             <h4>National Cheng Kung University  <em style="font-size: small;">Sep 2019 - Jun 2024</em></h4>
-                            <h5>Department of Accountancy</h5>
+                            <h5 style="margin-top: 20px;margin-bottom: 10px;">Department of Accountancy</h5>
                             <h5>Double major: Department of industrial and information management</h5>
-                            <br>
                             <ul id="edu">
                                 <li>Average GPA: 3.87</li>
                                 <li>Ranking: 15 / 77</li>
@@ -165,33 +167,60 @@
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-        var navbarToggler = document.querySelector(".navbar-toggler");
-        var navbarNav = document.querySelector(".navbar-nav");
-        var bsCollapse = new bootstrap.Collapse(navbarNav, {
-            toggle: false
+                var navbarToggler = document.querySelector(".navbar-toggler");
+                var navbarNav = document.querySelector(".navbar-nav");
+                var bsCollapse = new bootstrap.Collapse(navbarNav, {
+                    toggle: false
+                });
+
+                navbarToggler.addEventListener("click", function () {
+                    bsCollapse.toggle();
+                });
+
+                document.addEventListener("click", function (event) {
+                var isBodyClicked = event.target.closest('body');
+                var isDropdownItemClicked = event.target.closest('.dropdown-item');
+                var isNavLinkClicked = event.target.closest('.nav-link');
+                var isDropdownClicked = event.target.closest('.dropdown');
+
+                if (isNavLinkClicked || isBodyClicked) {
+                    if(!isDropdownClicked){
+                        $(navbarNav).collapse('hide');
+                    }
+                }
+                if (isDropdownItemClicked) {
+                    $(navbarNav).collapse('hide');
+                }
+            });
         });
 
-        navbarToggler.addEventListener("click", function () {
-            bsCollapse.toggle();
-        });
+        var darkMode = false;
 
-        document.addEventListener("click", function (event) {
-        var isBodyClicked = event.target.closest('body');
-        var isDropdownItemClicked = event.target.closest('.dropdown-item');
-        var isNavLinkClicked = event.target.closest('.nav-link');
-        var isDropdownClicked = event.target.closest('.dropdown');
+        function toggleMode() {
+            var body = document.body;
+            var button = document.getElementById('modeButton');
+            var links = document.getElementsByTagName('a');
 
-        if (isNavLinkClicked || isBodyClicked) {
-            if(!isDropdownClicked){
-                $(navbarNav).collapse('hide');
+            // 切換模式
+            darkMode = !darkMode;
+
+            // 根據模式設置背景顏色和按鈕文本
+            if (darkMode) {
+                body.style.backgroundColor = '#222831';
+                body.style.color = '#F6F6F2';
+                for (var i = 0; i < links.length; i++) {
+                    links[i].style.color = '#F6F6F2';
+                }
+                button.innerText = 'LIGHT MODE';
+            } else {
+                body.style.backgroundColor = '#F6F6F2';
+                body.style.color = '#222831';
+                for (var i = 0; i < links.length; i++) {
+                    links[i].style.color = '#222831';
+                }
+                button.innerText = 'DARK MODE';
             }
         }
-        if (isDropdownItemClicked) {
-            $(navbarNav).collapse('hide');
-        }
-    });
-});
-
     </script>
 </body>
 </html>
