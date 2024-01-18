@@ -48,7 +48,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#Python">Python</a>
                                         <a class="dropdown-item" href="#C++">C++</a>
-                                        <a class="dropdown-item" href="#WebD">Web design</a>
+                                        <a class="dropdown-item" href="#WebD">Webpage</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -104,15 +104,15 @@
             <div class="section-divider"></div>
             <div class="col-12">
                 <div id="PROFILE" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-10">
                         <div class="section">
                             <h3>PROFILE</h3><br>
-                            <p></p>
+                            <p style="line-height: 40px; font-size: 20px;">Double major in accounting and Industrial and Information Management allowed me for opportunities to develop interdisciplinary knowledge and to quickly adjust to newer systems, requirements, and teams as well as learning to be decisive when necessary.
+                                I would like to play an active and motivating role who encourages individual and inter-team creativity in teams. I believe that I can utilize my subject knowledge and inter-personal skills to enhance the performance of my team.</p>
                         </div>
                     </div> 
-                    <div class="col-6">
+                    <div class="col-2">
                         <div class="section">
-                            <h3>PROFILE</h3><br>
                             <p></p>
                         </div>
                     </div> 
@@ -121,32 +121,52 @@
 
 
                 <div id="EDUCATION" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="section">
-                            <h3>EDUCATION</h3><br>
-                            <p></p>
-                        </div>
-                    </div> 
-                    <div class="col-6">
-                        <div class="section">
-                            <h3>EDUCATION</h3><br>
-                            <p></p>
+                            <h3>EDUCATION</h3><br><br>
+                            <h4>National Cheng Kung University  <em style="font-size: small; margin-left: 100vh;">Sep 2019 - Jun 2024</em></h4>
+                            <h5>Department of Accountancy</h5>
+                            <h5>Double major: Department of industrial and information management</h5>
+                            <br>
+                            <ul id="edu">
+                                <li>Average GPA: 3.87</li>
+                                <li>Ranking: 15 / 77</li>
+                                <li>Total credit earned: 184</li>    
+                            </ul>
                         </div>
                     </div> 
                 </div>
                 <div class="section-divider"></div>
 
                 <div id="SKILLS" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="section">
-                            <h3>SKILLS</h3><br>
-                            <p></p>
-                        </div>
-                    </div> 
-                    <div class="col-6">
-                        <div class="section">
-                            <h3>SKILLS</h3><br>
-                            <p></p>
+                            <h3>SKILLS</h3>
+                            <ul style="font-size: 20px">
+                                <span id="Python"></span><br><br>
+                                <li>Python</li>
+                                    <ul>
+                                        <li>Project 1</li>
+                                        <li>Project 2</li>
+                                        <li>Project 3</li>
+                                    </ul>
+                                <span id="C++"></span><br><br>
+                                <li>C++</li>
+                                    <ul>
+                                        <li>Project 1</li>
+                                        <li>Project 2</li>
+                                        <li>Project 3</li>
+                                    </ul>
+                                <span id="WebD"></span><br><br>
+                                <li>Webpage developement</li>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                            </ul>
                         </div>
                     </div> 
                 </div>
@@ -154,16 +174,14 @@
 
 
                 <div id="EXPERIENCE" class="col-12 d-flex justify-content-start">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="section">
-                            <h3>EXPERIENCE</h3><br>
-                            <p></p>
-                        </div>
-                    </div> 
-                    <div class="col-6">
-                        <div class="section">
-                            <h3>EXPERIENCE</h3><br>
-                            <p></p>
+                                <h3>EXPERIENCE</h3><br><br>
+                                <ul>
+                                <li><h4>1<sup>st</sup> prize - National Cheng Kung University Business Competition</h4></li><br>
+                                <li><h4>Fianacial Ofiicer - National Cheng Kung University English Speaking Club</h4></li><br>
+                                <li><h4>Inturn - PwC Taiwan</h4></li>
+                            </ul>
                         </div>
                     </div> 
                 </div>
@@ -192,7 +210,6 @@
             var isNavbarNavClicked = navbarNav.contains(event.target);
 
             if (!isNavbarTogglerClicked && !isNavbarNavClicked) {
-                // 使用 jQuery 的方式來隱藏 Navbar
                 $(navbarNav).collapse('hide');
             }
         });
