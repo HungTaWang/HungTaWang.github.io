@@ -66,6 +66,10 @@ body{
     margin:0;
 }
 
+nav{
+    box-shadow: 0 4px 10px #222831bd;
+}
+
 #edu{
     font-size: 20px;
 }
