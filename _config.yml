@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Hung-Ta, Wang
 description: "我是臺大工工所的王泓達: 致力於提升最佳化及機器學習方法"
-baseurl: "/matjek"
+baseurl: ""
 url: "https://hungtawang.github.io/"
 repository: HungTaWang/HungTaWang.github.io
 paginate: 5

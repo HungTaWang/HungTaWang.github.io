@@ -1,27 +1,26 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2017-03-23 01:30:13 +0800
-categories: Default
-tags: test Test
+title:  "NCKU_business_competition"
+date:   2024-09-24 01:03:13 +0800
+categories: Extracurricular
+tags: NCKU
 comments: 1
+published: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+![NCKU_competition](https://hackmd.io/_uploads/Bkx218yT0.png)
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+When I participated in the National Cheng Kung University Business Competition, I was evaluated during the practice period as being quick to respond and good at adapting to changes. Therefore, I was assigned to be the final summary and mainly responsible for answering the review questions.
+<br>
+Both parts require contingency based on the remaining time, and attach great importance to on-the-spot reactions and prior practice. Among them, what impressed me most was the judges’ Q&A.
+<br>
+Our theme at that time was how AKB48 would attack overseas markets and establish a stronghold abroad. We researched and investigated the social-economic conditions of many countries and finally chose Indonesia.
+<br>
+The question asked by the judges was that the TV penetration rate in Indonesia is so low. How can we ensure that our programs can be seen by the public? This question was completely unexpected for us.
+<br>
+Maybe it’s because I always like to make decisions that are different from ordinary people, so I am more adaptable to uncertainty. Even though I was panicking, I could only take the microphone with trepidation.
+<br>
+Trying to organize all my life experience and knowledge, my final answer is that when television is not popular, if our programs can attract audiences,
+Audiences will also take the initiative to find ways to get in touch with our programs. Even if they cannot watch in front of the TV on time, they will still continue to spread our programs through discussions with friends.
+<br>
+Our new group actually stimulates more discussion. This answer was affirmed by the judges, and we finally won the championship!
