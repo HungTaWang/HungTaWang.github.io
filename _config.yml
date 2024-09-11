@@ -24,7 +24,7 @@ paginate: 5
 github_profile: "https://github.com/HungTaWang"
 user: "Hung-Ta, Wang"
 user_email: "hungta.wang0118@gmail.com"
-contact_url: "https://hungtawang.github.io/"
+#contact_url: "https://hungtawang.github.io/"
 
 # Build settings
 markdown: kramdown
