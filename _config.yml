@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Hung-Ta, Wang
-description: "我是臺大工工所的王泓達: 致力於提升最佳化及機器學習方法"
+description: "我是臺大工工所的王泓達: 致力於提升最佳化及機器學習方法!"
 baseurl: ""
 url: "https://hungtawang.github.io/"
 repository: HungTaWang/HungTaWang.github.io
@@ -25,6 +25,8 @@ github_profile: "https://github.com/HungTaWang"
 user: "Hung-Ta, Wang"
 user_email: "hungta.wang0118@gmail.com"
 #contact_url: "https://hungtawang.github.io/"
+permalink: /:year/:month/:day/:title
+
 
 # Build settings
 markdown: kramdown
