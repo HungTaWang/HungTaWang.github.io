@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "NCKU_business_competition"
-date:   2024-09-24 01:03:13 +0800
+title:  "NCKU Business Competition"
+date:   2024-09-12 01:03:13 +0800
 categories: Extracurricular
 tags: NCKU
 comments: 1
 published: true
 ---
+> Our teams got the first prize in NCKU Business Competition!! 
 
-![NCKU_competition](https://hackmd.io/_uploads/Bkx218yT0.png)
+![NCKU_competition](https://hackmd.io/_uploads/Bkx218yT0.png){:height="50%" width="50%"}
 
 When I participated in the National Cheng Kung University Business Competition, I was evaluated during the practice period as being quick to respond and good at adapting to changes. Therefore, I was assigned to be the final summary and mainly responsible for answering the review questions.
 <br>
