@@ -3,7 +3,7 @@ layout: post
 title:  "NTU Courses - Fall 2024"
 date:   2024-09-12 12:37:09 +0800
 categories: Industrial_Engineering
-tags: Natioal_Taiwan_University
+tags: National_Taiwan_University
 comments: 1
 published: true
 ---
