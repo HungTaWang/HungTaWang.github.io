@@ -2,26 +2,20 @@
 layout: post
 title:  "NCKU Business Competition"
 date:   2024-09-12 01:03:13 +0800
-categories: Extracurricular
-tags: NCKU
+categories: Extracurricular_Activities
+tags: National_Cheng_Kung_University
 comments: 1
 published: true
 ---
 > Our teams got the first prize in NCKU Business Competition!! 
 
-![NCKU_competition](https://hackmd.io/_uploads/Bkx218yT0.png){:height="50%" width="50%"}
+![NCKU_competition]({{site.baseurl}}/assets/res/NCKU_competition.png){:height="50%" width="50%"}
 
-When I participated in the National Cheng Kung University Business Competition, I was evaluated during the practice period as being quick to respond and good at adapting to changes. Therefore, I was assigned to be the final summary and mainly responsible for answering the review questions.
-<br>
-Both parts require contingency based on the remaining time, and attach great importance to on-the-spot reactions and prior practice. Among them, what impressed me most was the judges’ Q&A.
-<br>
-Our theme at that time was how AKB48 would attack overseas markets and establish a stronghold abroad. We researched and investigated the social-economic conditions of many countries and finally chose Indonesia.
-<br>
-The question asked by the judges was that the TV penetration rate in Indonesia is so low. How can we ensure that our programs can be seen by the public? This question was completely unexpected for us.
-<br>
-Maybe it’s because I always like to make decisions that are different from ordinary people, so I am more adaptable to uncertainty. Even though I was panicking, I could only take the microphone with trepidation.
-<br>
-Trying to organize all my life experience and knowledge, my final answer is that when television is not popular, if our programs can attract audiences,
-Audiences will also take the initiative to find ways to get in touch with our programs. Even if they cannot watch in front of the TV on time, they will still continue to spread our programs through discussions with friends.
-<br>
-Our new group actually stimulates more discussion. This answer was affirmed by the judges, and we finally won the championship!
+
+<p>During my participation in the National Cheng Kung University Business Competition, I was evaluated as being quick to respond and adept at adapting to changes during the practice period. As a result, I was assigned the crucial role of delivering the final summary and handling the judges’ Q&A session. Both tasks required me to adjust in real time based on the remaining time and prioritize quick thinking, reinforced through thorough preparation.</p>
+
+<p>Our project centered around AKB48’s potential expansion into overseas markets, with our team focusing on Indonesia after researching the socio-economic conditions of several countries. During the judges' Q&A, we faced an unexpected challenge when they pointed out the low TV penetration rate in Indonesia, questioning how we could ensure the visibility of our programs to the public.</p>
+
+<p>This question caught us off guard, but perhaps because I tend to make unconventional decisions and am more adaptable to uncertainty, I took the microphone despite feeling nervous. Drawing on my knowledge and experience, I responded that even if television was not widely accessible, an engaging program would prompt audiences to seek it out through alternative means. I emphasized that even if viewers couldn’t watch it live, discussions among friends would continue to spread awareness and interest in our content. Our new group would stimulate more engagement and discussion.</p>
+
+<p>The judges appreciated my answer, and in the end, our team won the championship!</p>
