@@ -13,3 +13,4 @@ published: true
   <b style="font-size: 22px;">[Times Siries Analysis](https://hackmd.io/@9ZXbXZaJT5qLpWlMzykssw/BJvfeyCIp)<b> <br>
   <b style="font-size: 22px;">[Linear Algebra](https://hackmd.io/@9ZXbXZaJT5qLpWlMzykssw/By8J7VN20)<b> <br>
   <b style="font-size: 22px;">[Stochastic Process](https://hackmd.io/@9ZXbXZaJT5qLpWlMzykssw/HkXPWfdhC)<b> <br>
+  <b style="font-size: 22px;">[Statistical Deep Learning](https://hackmd.io/@9ZXbXZaJT5qLpWlMzykssw/S17YpJ43C)<b> 
