@@ -63,7 +63,6 @@ published: true
     <div id="result"></div>
 
     <script>
-        // 動態生成矩陣輸入表單
         function createMatrix(matrixId) {
             let rows = document.getElementById(`rows${matrixId}`).value;
             let cols = document.getElementById(`cols${matrixId}`).value;
@@ -86,7 +85,6 @@ published: true
             matrixDiv.appendChild(table);
         }
 
-        // 獲取輸入的矩陣數據
         function getMatrixData(matrixId) {
             let rows = document.getElementById(`rows${matrixId}`).value;
             let cols = document.getElementById(`cols${matrixId}`).value;
@@ -102,7 +100,6 @@ published: true
             return matrix;
         }
 
-        // 矩陣相乘
         function multiplyMatrices() {
     let matrixA = getMatrixData('A');
     let matrixB = getMatrixData('B');
@@ -112,13 +109,11 @@ published: true
     let rowsB = matrixB.length;
     let colsB = matrixB[0].length;
 
-    // 檢查是否可以相乘
     if (colsA !== rowsB) {
         document.getElementById('result').innerText = '錯誤！矩陣 A 的列數必須等於矩陣 B 的行數。';
         return;
     }
 
-    // 進行矩陣相乘
     let result = [];
     for (let i = 0; i < rowsA; i++) {
         result[i] = [];
@@ -130,7 +125,6 @@ published: true
         }
     }
 
-    // 構建表格的 HTML 字符串
     let tableHTML = '<table>';
     for (let i = 0; i < result.length; i++) {
         tableHTML += "<tr>";
@@ -141,7 +135,6 @@ published: true
     }
     tableHTML += '</table>';
 
-    // 一次性將表格 HTML 賦值給 resultDiv
     let resultDiv = document.getElementById('result');
     resultDiv.innerHTML = tableHTML;
 }
