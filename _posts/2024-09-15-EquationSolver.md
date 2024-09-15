@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Matrix Inverse"
-date:   2024-09-15 11:35:17 +0800
+title:  "Equation Solver"
+date:   2024-09-15 16:26:48 +0800
 categories: Tools
 tags: National_Taiwan_University
 comments: 1
@@ -14,11 +14,8 @@ published: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>反矩陣計算器</title>
+    <title>Equation Solver</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
         .matrix-container {
             margin-bottom: 20px;
         }
@@ -33,32 +30,30 @@ published: true
             padding: 5px;
         }
         button{
-				border-radius: 50px;
-				background-color: #fff6a8;
-				font-size: 20px;
-				border-style: outset; 
-				width: 180px;
-				height: 55px;
-				margin: 20px;
-				font-weight: bold;
-			}
+			border-radius: 50px;
+			background-color: #fff6a8;
+			font-size: 20px;
+            border-style: outset; 
+			width: 180px;
+			height: 55px;
+			margin: 20px;
+			font-weight: bold;
+		}
     </style>
 </head>
 <body>
     <div class="matrix-container">
-        <h5>輸入矩陣</h5>
-        <label for="size">矩陣大小：</label>
-        <input type="number" id="size" value="2" min="2" max="10">
-        <button onclick="createMatrix()">生成矩陣</button>
-        <div id="matrix"></div>
+        <label for="size">有幾個未知數：</label>
+        <input type="number" id="size" value="2" min="2" max="10"><br>
+        <button onclick="createMatrix()">生成方程組</button>
+        <div id="equationMatrix"></div>
     </div>
-    <button onclick="invertMatrix()">計算反矩陣</button>
-    <h5>結果</h5>
+    <button onclick="solveEquations()">求解</button>
     <div id="result"></div>
     <script>
         function createMatrix() {
             let size = document.getElementById('size').value;
-            let matrixDiv = document.getElementById('matrix');
+            let matrixDiv = document.getElementById('equationMatrix');
             matrixDiv.innerHTML = '';
             let table = document.createElement('table');
             for (let i = 0; i < size; i++) {
@@ -68,16 +63,25 @@ published: true
                     let input = document.createElement('input');
                     input.type = 'number';
                     input.id = `matrix_${i}_${j}`;
+                    input.placeholder = `a${i+1}${j+1}`;
                     cell.appendChild(input);
                     row.appendChild(cell);
                 }
+                let constCell = document.createElement('td');
+                let constInput = document.createElement('input');
+                constInput.type = 'number';
+                constInput.id = `const_${i}`;
+                constInput.placeholder = `b${i+1}`;
+                constCell.appendChild(constInput);
+                row.appendChild(constCell);
                 table.appendChild(row);
             }
             matrixDiv.appendChild(table);
         }
-        function getMatrixData() {
+        function getEquationData() {
             let size = document.getElementById('size').value;
             let matrix = [];
+            let constants = [];
             for (let i = 0; i < size; i++) {
                 let row = [];
                 for (let j = 0; j < size; j++) {
@@ -86,51 +90,47 @@ published: true
                 }
                 matrix.push(row);
             }
-            return matrix;
-        }
-        function invertMatrix() {
-            let matrix = getMatrixData();
-            let size = matrix.length;
-            let identityMatrix = [];
             for (let i = 0; i < size; i++) {
-                identityMatrix[i] = [];
-                for (let j = 0; j < size; j++) {
-                    identityMatrix[i][j] = i === j ? 1 : 0;
-                }
+                let value = document.getElementById(`const_${i}`).value;
+                constants.push(parseFloat(value));
+            }
+            return {matrix, constants};
+        }
+        function solveEquations() {
+            let { matrix, constants } = getEquationData();
+            let size = matrix.length;
+            for (let i = 0; i < size; i++) {
+                matrix[i].push(constants[i]);
             }
             for (let i = 0; i < size; i++) {
-                let pivot = matrix[i][i];
-                if (pivot === 0) {
-                    document.getElementById('result').innerText = '錯誤！無法計算反矩陣（可能是奇異矩陣）。';
+                if (matrix[i][i] === 0) {
+                    document.getElementById('result').innerText = '錯誤！無法解此方程（可能有零主對角元素）。';
                     return;
                 }
-                for (let j = 0; j < size; j++) {
-                    matrix[i][j] /= pivot;
-                    identityMatrix[i][j] /= pivot;
+                for (let j = i; j < size + 1; j++) {
+                    matrix[i][j] /= matrix[i][i];
                 }
                 for (let k = 0; k < size; k++) {
                     if (k !== i) {
                         let factor = matrix[k][i];
-                        for (let j = 0; j < size; j++) {
+                        for (let j = i; j < size + 1; j++) {
                             matrix[k][j] -= factor * matrix[i][j];
-                            identityMatrix[k][j] -= factor * identityMatrix[i][j];
                         }
                     }
                 }
             }
-            let tableHTML = '<table>';
+            let solutions = [];
             for (let i = 0; i < size; i++) {
-                tableHTML += "<tr>";
-                for (let j = 0; j < size; j++) {
-                    tableHTML += `<td>　　${identityMatrix[i][j].toFixed(2)}　　</td>`;
-                }
-                tableHTML += "</tr>";
+                solutions.push(matrix[i][size]);
             }
-            tableHTML += '</table>';
             let resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = tableHTML;
+            let resultHTML = '<h5>結果</h5><ul>';
+            for (let i = 0; i < solutions.length; i++) {
+                resultHTML += `<li>x${i+1} &nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp; ${solutions[i].toFixed(2)}</li>`;
+            }
+            resultHTML += '</ul>';
+            resultDiv.innerHTML = resultHTML;
         }
     </script>
-
 </body>
 </html>

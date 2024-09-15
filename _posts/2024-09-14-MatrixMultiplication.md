@@ -37,7 +37,7 @@ published: true
 				background-color: #fff6a8;
 				font-size: 20px;
 				border-style: outset; 
-				width: 135px;
+				width: 180px;
 				height: 55px;
 				margin: 20px;
 				font-weight: bold;
@@ -45,7 +45,6 @@ published: true
     </style>
 </head>
 <body>
-    <h4>矩陣相乘計算器</h4>
     <div class="matrix-container">
         <h5>矩陣 A</h5>
         <label for="rowsA">Row數：</label>
