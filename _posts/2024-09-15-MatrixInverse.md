@@ -14,7 +14,7 @@ published: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>矩陣反矩陣計算器</title>
+    <title>反矩陣計算器</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,7 +45,7 @@ published: true
     </style>
 </head>
 <body>
-    <h4>矩陣反矩陣計算器</h4>
+    <h4>反矩陣計算器</h4>
     <div class="matrix-container">
         <h5>輸入矩陣</h5>
         <label for="size">矩陣大小：</label>
@@ -53,7 +53,7 @@ published: true
         <button onclick="createMatrix()">生成矩陣</button>
         <div id="matrix"></div>
     </div>
-    <button onclick="invertMatrix()">計算反矩陣</button>
+    <button onclick="invertMatrix()">求反矩陣</button>
     <h5>結果</h5>
     <div id="result"></div>
     <script>
