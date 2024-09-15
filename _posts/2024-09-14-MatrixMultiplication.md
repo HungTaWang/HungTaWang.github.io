@@ -37,7 +37,7 @@ published: true
 				background-color: #fff6a8;
 				font-size: 20px;
 				border-style: outset; 
-				width: 125px;
+				width: 135px;
 				height: 55px;
 				margin: 20px;
 				font-weight: bold;
