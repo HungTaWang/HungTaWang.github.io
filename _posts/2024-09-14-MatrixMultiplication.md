@@ -32,6 +32,16 @@ published: true
         td {
             padding: 5px;
         }
+        button{
+				border-radius: 50px;
+				background-color: #fff6a8;
+				font-size: 20px;
+				border-style: outset; 
+				width: 125px;
+				height: 55px;
+				margin: 20px;
+				font-weight: bold;
+			}
     </style>
 </head>
 <body>
@@ -54,7 +64,7 @@ published: true
         <button onclick="createMatrix('B')">生成矩陣 B</button>
         <div id="matrixB"></div>
     </div>
-    <button onclick="multiplyMatrices()">計算矩陣相乘</button>
+    <button onclick="multiplyMatrices()">矩陣相乘</button>
     <h5>結果</h5>
     <div id="result"></div>
     <script>
