@@ -103,12 +103,24 @@ published: true
                 matrix[i].push(constants[i]);
             }
             for (let i = 0; i < size; i++) {
+                // 檢查主對角元素是否為0
                 if (matrix[i][i] === 0) {
-                    document.getElementById('result').innerText = '錯誤！無法解此方程（可能有零主對角元素）。';
-                    return;
+                    let swapped = false;
+                    for (let k = i + 1; k < size; k++) {
+                        if (matrix[k][i] !== 0) {
+                            [matrix[i], matrix[k]] = [matrix[k], matrix[i]];
+                            swapped = true;
+                            break;
+                        }
+                    }
+                    if (!swapped) {
+                        document.getElementById('result').innerText = '錯誤！無法解此方程（主對角線元素為零且無法交換）。';
+                        return;
+                    }
                 }
+                let diagonal = matrix[i][i];
                 for (let j = i; j < size + 1; j++) {
-                    matrix[i][j] /= matrix[i][i];
+                    matrix[i][j] /= diagonal;
                 }
                 for (let k = 0; k < size; k++) {
                     if (k !== i) {
@@ -124,7 +136,7 @@ published: true
                 solutions.push(matrix[i][size]);
             }
             let resultDiv = document.getElementById('result');
-            let resultHTML = '<h5>結果</h5><ul>';
+            let resultHTML = '<h5>解：</h5><ul>';
             for (let i = 0; i < solutions.length; i++) {
                 resultHTML += `<li>x${i+1} &nbsp;&nbsp;&nbsp; = &nbsp;&nbsp;&nbsp; ${solutions[i].toFixed(2)}</li>`;
             }
