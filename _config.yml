@@ -30,7 +30,7 @@ permalink: /:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
