@@ -14,7 +14,7 @@ published: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>矩陣相乘計算器</title>
+    <title>Matrix Multiplication</title>
     <style>
         .matrix-container {
             margin-bottom: 20px;
