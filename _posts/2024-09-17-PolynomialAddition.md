@@ -96,7 +96,7 @@ published: true
         }
         function displayResult(result) {
             let resultDiv = document.getElementById('result');
-            let resultHTML = '<h5>Result:</h5><p>';
+            let resultHTML = '<h5>結果：</h5><p>';
             for (let i = result.length - 1; i >= 0; i--) {
                 let coef = result[i].toFixed(2);
                 if (coef != 0) {
