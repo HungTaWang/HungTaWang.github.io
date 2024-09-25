@@ -5,7 +5,7 @@ date:   2024-09-12 09:30:51 +0800
 categories: Extracurricular_Activities
 tags: National_Cheng_Kung_University
 comments: 1
-published: true
+published: true 
 ---
 > I had a speech in NCKU English Speaking Club when I was a junior.
 

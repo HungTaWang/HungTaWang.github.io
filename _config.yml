@@ -29,7 +29,7 @@ permalink: /:year/:month/:day/:title
 
 
 # Build settings
-markdown: kramdown
+markdown: kramdown 
 plugins:
   - jekyll-feed
   - jekyll-paginate

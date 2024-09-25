@@ -5,7 +5,7 @@ date:   2024-09-12 01:03:13 +0800
 categories: Extracurricular_Activities
 tags: National_Cheng_Kung_University
 comments: 1
-published: true
+published: true 
 ---
 > Our team secured first prize in the NCKU Business Competition!
 

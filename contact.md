@@ -7,4 +7,4 @@ css: ["contact.css"]
   <div class="icontain">
     <iframe src="{{site.contact_url}}">Loading...</iframe>
   </div>
-</div>
+</div> 

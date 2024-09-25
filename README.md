@@ -14,7 +14,7 @@ A responsive [Material](https://material.io/) theme based on [Materialize.css](h
 ## Installation
 
 Clone or fork this repo and edit `_config.yml` as needed.
-
+ 
 ## Configuration
 
 Most of the configurations can be found in `_config.yml`. The configurations listed below are specific to MatJek. If you are not using `google_tracking_id` or `disqus_shortname`, just remove them completely.
