@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Hung-Ta, Wang
-description: "My research interest is stochastic programming and machine learning!"
+description: "My research interest is dynamic programming and machine learning!"
 baseurl: ""
 url: "https://hungtawang.github.io/"
 repository: HungTaWang/HungTaWang.github.io
