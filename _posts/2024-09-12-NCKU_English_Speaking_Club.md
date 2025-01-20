@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NCKU English Speaking Club"
-date:   2022-3-12 13:30:51 +0800
+date:   2022-03-22 19:30:00 +0800
 categories: Extracurricular_Activities
 tags: National_Cheng_Kung_University
 comments: 1
