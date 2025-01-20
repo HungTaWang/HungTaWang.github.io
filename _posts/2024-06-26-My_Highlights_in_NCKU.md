@@ -7,7 +7,7 @@ tags: National_Cheng_Kung_University
 comments: 1
 published: true 
 ---
-> This is a summary of my academic performance at NCKU.
+> A summary of my academic performance at NCKU.
 
 <p>Every summer vacation has been a milestone in my university life, marking different stages of my dreams and accomplishments. During the summer after my freshman year, in preparation for future courses in the Department of Industrial and Information Management, I began to self-study programming. The sense of achievement from working hard, brainstorming, and finally arriving at the correct solution was deeply fulfilling. This effort also helped me achieve a score of 90 in the Introduction to Computers course, ranking third in my class.</p>
 

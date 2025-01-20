@@ -7,7 +7,7 @@ tags: National_Cheng_Kung_University
 comments: 1
 published: true 
 ---
-> This is the first speech I have given at NCKU English Speaking Club.
+> My first speech at NCKU English Speaking Club.
 
 ![NCKU_competition]({{site.baseurl}}/assets/res/NESC.png){:height="50%" width="50%"}
 
