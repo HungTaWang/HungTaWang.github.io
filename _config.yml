@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hung-Ta, Wang
+title: Home of Hung-Ta
 description: "My research interest is dynamic programming and machine learning!"
 baseurl: ""
 url: "https://hungtawang.github.io/"
