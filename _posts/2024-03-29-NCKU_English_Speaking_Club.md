@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "NCKU English Speaking Club"
-date:   2022-03-22 19:30:00 +0800
+date:   2022-03-29 19:30:00 +0800
 categories: Extracurricular_Activities
 tags: National_Cheng_Kung_University
 comments: 1
 published: true 
 ---
-> I had a speech in NCKU English Speaking Club when I was a junior.
+> This is the first speech I have given at NCKU English Speaking Club.
 
 ![NCKU_competition]({{site.baseurl}}/assets/res/NESC.png){:height="50%" width="50%"}
 

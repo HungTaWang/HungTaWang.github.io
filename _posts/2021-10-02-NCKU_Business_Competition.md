@@ -7,7 +7,7 @@ tags: National_Cheng_Kung_University
 comments: 1
 published: true 
 ---
-> Our team secured first prize in the NCKU Business Competition!
+> Our team won the first prize in the NCKU Business Competition!
 
 ![NCKU_competition]({{site.baseurl}}/assets/res/NCKU_competition.png){:height="50%" width="50%"}
 
