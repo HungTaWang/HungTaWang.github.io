@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NCKU Business Competition"
-date:   2021-10-02 17:00:00 +0800
+date:   "2021-10-02 17:00:00"
 categories: Extracurricular_Activities
 tags: National_Cheng_Kung_University
 comments: 1

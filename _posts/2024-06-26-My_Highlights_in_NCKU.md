@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My Highlights in NCKU"
-date:   2024-06-26 13:00:00 +0800
+date:   "2024-06-26 13:00:00"
 categories: Acadamic_Performances
 tags: National_Cheng_Kung_University
 comments: 1

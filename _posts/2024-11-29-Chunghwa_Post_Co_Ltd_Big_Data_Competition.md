@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Chunghwa Post Co.,Ltd. Big Data Competition"
-date:   2024-11-29 15:00:00 +0800
+date:   "2024-11-29 15:00:00"
 categories: Extracurricular_Activities
 tags: National_Taiwan_University
 comments: 1
