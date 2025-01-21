@@ -7,7 +7,7 @@ tags: National_Taiwan_University
 comments: 1
 published: true 
 ---
-> Team Leader of the team with "最佳創意獎" and "叡揚數據應用創新獎" in Chunghwa Post Co.,Ltd. Big Data Competition.
+> Team Leader of the team with "Creativity Award" and "Special Award by Galaxy Software Services" in the Chunghwa Post Co.,Ltd. Big Data Competition.
 
 
 
