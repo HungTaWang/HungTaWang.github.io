@@ -9,6 +9,10 @@ published: true
 ---
 > Team Leader of the team with "Creativity Award" and "Special Award by Galaxy Software Services" in the Chunghwa Post Co.,Ltd. Big Data Competition.
 
+![Post]({{site.baseurl}}/assets/res/post.png){:height="50%" width="50%"}
+
+##### We are team "所向吳敵". 
+
 It was my first competition during the first semester of my master's program, where our team was tasked with optimizing mailbox locations using AWS. I contributed to solving challenges in selecting revenue indicators. To address this, we focused on core factors and, after preprocessing the data, applied Multiple Regression Analysis to identify four key indicators:
 
 - Proximity between mailboxes and metro stations
