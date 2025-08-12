@@ -14,8 +14,8 @@ css: ["index.css"]
         </p>
         <p id="post-content">{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p>
       </div>
-      <div class="card-action">
-        <a href="{{post.url | prepend: site.baseurl}}">
+      <div class="card-action" >
+        <a href="{{post.url | prepend: site.baseurl}}" class="waves-effect waves-light btn indigo darken-1">
           Read More
         </a> 
       </div>
@@ -38,7 +38,7 @@ css: ["index.css"]
         </a>
       </li>
       {% if paginator.page == 1 %}
-      <li class="active teal">
+      <li class="active indigo">
         <a href="#!">1</a>
       {% else %}
       <li class="waves-effect">
