@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Investment Portfolio Recommendation by AHP and LINE Bot @ NCKU"
+title: "Investment Portfolio Recommendation by AHP and LINE Bot"
 date: "2024-01-20 16:00:00"
 categories: Acadamic_Performances
 tags: National_Cheng_Kung_University
